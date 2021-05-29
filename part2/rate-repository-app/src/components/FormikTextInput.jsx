@@ -31,6 +31,7 @@ const FormikTextInput = ({ name, ...props }) => {
         value={field.value}
         error={showError}
         style = {styles.input}
+        secureTextEntry = {name === "password" ? true : false}
         borderColor = {showError ? "#d73a4a" : "grey"}
         {...props}
       />
